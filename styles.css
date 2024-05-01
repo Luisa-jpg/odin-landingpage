@@ -22,12 +22,14 @@ a {
 }
 
 .borderless-button {
+    box-sizing: border-box;
     background-color: #3882f6;
     color: white;
     font-size: 18px;
     font-weight: 700;
     border-radius: 10px;
     text-align: center;
+    height: 1.75em;
     width: fit-content;
     padding: 2px 20px 6px;
 }
@@ -35,7 +37,27 @@ a {
 .borderless-button:hover {
     background-color: white;
     color: #3882f6;
+    cursor: pointer;
 }
+
+.border-button {
+    box-sizing: border-box;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border: 2px solid white;
+    border-radius: 10px;
+    text-align: center;
+    height: 1.75em;
+    width: fit-content;
+    padding: 2px 20px 6px;
+}
+
+.border-button:hover {
+    background-color: white;
+    color: #3882f6;
+    cursor: pointer;
+}   
 
 .header {
     background-color: #1f2937;
@@ -98,22 +120,71 @@ a {
     background-color: grey;
 }
 
-.content-block {}
+.content-block {
+    padding: 20px 0 70px; 
+    width: 100%;
+    box-sizing: border-box;
+}
 
-.info {}
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
 
-.info-item {}
+.info-item {
+    width: 150px;
+    text-align: center;
+    line-height: 1.2;
+}
 
-.item-img {}
+.item-img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border: 4px solid #3882f6;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
 
 .quote {
     background-color: #e5e7eb;
-    width: 100%;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+    color: #1f2937;
+    padding: 30px 100px;
 }
 
-.call-to-action {}
+.call-to-action {
+    background-color: #3882f6;
+    color:#e5e7eb;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 20px 50px;
+    margin: 50px auto 0;
+    width: 50%;
+}
+
+.call-to-action p {
+    margin: 0;
+}
+
+.call-to-action h3 {
+    margin: 0;
+}
 
 .footer {
     background-color: #1f2937;
     width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: none;
+    color: #e5e7eb;
 }
